@@ -1,0 +1,20 @@
+Backend
+1 setup server +
+2 establish mongo connection +
+3 roting + 
+4 create model +
+5 add to model variables +
+6 create purchase roting + 
+7 create purchase controller +
+8 validation of input +
+9 fetch data to server +
+10 querry data in Mongo db +
+
+
+
+Frontend
+1 create basic template on pug +
+2 connect css to pug +
+3 crate form with input layer +
+4 fetch data to Backend +
+5 design thank you page +
