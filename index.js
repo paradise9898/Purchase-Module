@@ -28,7 +28,7 @@ app.post('/thanku', async (req, res) => {
     const formData  = JSON.stringify( req.body);
     console.log(formData);
     const  http = new XMLHttpRequest();
-    const  url = "https://testwork9.herokuapp.com//api/purchase"
+    const  url = "https://testwork9.herokuapp.com/api/purchase"
     const  method = "POST";
     const  data = formData
 
