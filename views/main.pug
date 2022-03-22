@@ -1,0 +1,48 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sign Up Form
+  link(rel='stylesheet' href='./public/index.css')
+
+  link(href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='css/main.css')
+.row
+  .col-md-12
+    form(action='/thanku' method='post')
+      h1 Make purchase
+      fieldset
+        legend
+        label(for='Card Number') CardNumber:
+        input#cardnumber(type='text' name='CardNumber') 
+        
+        label(for='ExpirationDate') ExpirationDate:
+        input#ExpirationDate(type='text' name='ExpirationDate') 
+        
+        label(for='CVV') CVV:
+        input#CVV(type='text' name='CVV') 
+        
+        label(for='Amount') Amount:
+        input#Amount(type='text' name='Amount')
+  
+        button(type='submit') Оплатить
+
+script.
+  Document.getElementById('cardnumber').textContent = cardnumber;
+  Document.getElementById('expdate').textContent = ExpirationDate;
+  Document.getElementById('cvv').textContent = cvv;
+  Document.getElementById('Amount').textContent = Amount;
+
+  const data = {cardumber, ExpirationDate , CVV, Amount};
+  const options = {
+  method: 'POST'
+  headers: {
+  'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+  };
+  fetch('' , options)
+  console.log(cardnumber)
+  console.log(ExpDate)
+  console.log(CVV)
+
+  fetch('/thanku' , options)
