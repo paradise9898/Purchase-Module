@@ -1,4 +1,4 @@
-const Purchase = require('../controllers/models/purchases')
+    const Purchase = require('../controllers/models/purchases')
 
 class PurchaseController {
     async purchase(req, res) {
